@@ -208,3 +208,6 @@ end
 def found_player(player_name)
 found_player = players.find do |player_hash|
   player_hash[:player_name] == player_name
+  end
+  found_player
+end
