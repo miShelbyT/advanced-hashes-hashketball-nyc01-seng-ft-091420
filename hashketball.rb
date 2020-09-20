@@ -127,8 +127,6 @@ def game_hash
   }
 end
 
-binding.pr
-
 def num_points_scored(player_name)
   game_hash.each do |home_away, team_info|
     team_info[:players].each do |name|
@@ -211,3 +209,4 @@ found_player = players.find do |player_hash|
   end
   found_player
 end
+binding.pry
