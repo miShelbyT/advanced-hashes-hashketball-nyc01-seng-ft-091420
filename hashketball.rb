@@ -127,7 +127,7 @@ def game_hash
   }
 end
 
-binding.pry
+binding.pr
 
 def num_points_scored(player_name)
   game_hash.each do |home_away, team_info|
@@ -196,4 +196,11 @@ def big_shoe_rebounds
     end
   end
   return rebounds
+end
+
+
+players = game_hash.keys.map do |loc|
+  game_hash[loc][:players]
+end
+  players.flatten
 end
