@@ -198,9 +198,13 @@ def big_shoe_rebounds
   return rebounds
 end
 
-
+def players
 players = game_hash.keys.map do |loc|
   game_hash[loc][:players]
 end
   players.flatten
 end
+
+def found_player(player_name)
+found_player = players.find do |player_hash|
+  player_hash[:player_name] == player_name
